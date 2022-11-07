@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <script>
+    let input = prompt("please enter : ");
+    if(isNaN(parseInt(input)))
+    {
+    if(input == "true" || input == "false")
+    {                                                 
+    alert("Boolean");
+    }
+else if(input == "" && input.length == 0)
+    {
+alert("Null");
+ }
+    else if(input[0]== "[" && input[input.length-1] == "]")
+    {
+    alert("Array");
+ }
+else if(input[0]== "{" && input[input.length-1] == "}")
+{
+     alert("Object");
+     }
+      else
+{
+    alert("String");
+ }
+    
+ }
+ else{
+    alert("Number");
+ }
+     </script>
+    
+    
+     
+
+</body>
+</html>

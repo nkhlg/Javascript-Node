@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ab">
+        
+    </div>
+    <script>
+        var b=document.getElementById("ab")
+        var arr=[[1,2,3],
+        [4,5,6]]
+        var c=0;
+        arr.forEach(function(i){
+            c=c+1
+            var row = `
+                        <p>
+                           row ${c}</p>`;
+                b.innerHTML=b.innerHTML + row;
+
+        i.forEach(function(j)
+        {
+            var row = `
+                        <p>
+                            ${j}</p>`;
+                b.innerHTML=b.innerHTML + row;
+        });
+        
+    
+        });
+        </script>
+</body>
+</html>
